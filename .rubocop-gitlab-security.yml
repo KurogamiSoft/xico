@@ -1,0 +1,23 @@
+###########################################################
+################ Rubocop Gitlab Security ##################
+###########################################################
+
+# You can find all configuration options for rubocop-rspec here: https://docs.rubocop.org/rubocop-rspec/cops.html
+
+GitlabSecurity/DeepMunge:
+  Enabled: true
+
+GitlabSecurity/JsonSerialization:
+  Enabled: true
+
+GitlabSecurity/RedirectToParamsUpdate:
+  Enabled: true
+
+GitlabSecurity/SendFileParams:
+  Enabled: true
+
+GitlabSecurity/SqlInjection:
+  Enabled: true
+
+GitlabSecurity/SystemCommandInjection:
+  Enabled: true

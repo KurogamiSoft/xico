@@ -1,0 +1,29 @@
+default: &default
+  adapter: postgresql
+  encoding: utf-8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+x-local_database: &x-local-database
+  username: postgres
+  password: postgres
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: xico_development
+  <<: *x-local-database
+
+test:
+  <<: *default
+  database: xico_test
+  <<: *x-local-database
+
+production:
+  <<: *default
+  database: xico_production
+  <<: *x-local-database
+
+staging:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>

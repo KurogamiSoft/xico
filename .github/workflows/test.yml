@@ -36,13 +36,13 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2 # Replace with your desired Ruby version
+          ruby-version: 3.2.2 # Replace with your desired Ruby version
           bundler-cache: true
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 14 # Replace with your desired Node.js version
+          node-version: 20 # Replace with your desired Node.js version
 
       - name: Install dependencies
         run: |

@@ -4,11 +4,13 @@ require 'rails_helper'
 RSpec.describe Role, type: :model do
   let(:role) { FactoryBot.build(:role) }
 
+  it { should have_many(:users) }
   it { should validate_presence_of(:code) }
+  it { should validate_uniqueness_of(:code).case_insensitive }
   it { should validate_presence_of(:name) }
   it { should have_db_index(:deleted_at) }
 
-  it "has a valid factory" do
+  it 'is valid with valid attributes' do
     expect(role).to be_valid
   end
 

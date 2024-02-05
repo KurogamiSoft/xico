@@ -4,6 +4,7 @@ RSpec.describe Language, type: :model do
   let(:language) { FactoryBot.build(:language) }
 
   it { should validate_presence_of(:code) }
+  it { should validate_uniqueness_of(:code).case_insensitive }
   it { should validate_presence_of(:name) }
   it { should have_db_index(:deleted_at) }
 

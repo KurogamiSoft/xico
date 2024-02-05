@@ -2,20 +2,39 @@ source 'https://rubygems.org'
 
 ruby '3.2.2'
 
+gem 'audited'
 gem 'bootsnap', require: false
+gem 'devise'
+gem 'devise_invitable'
+gem 'devise-security'
+gem 'enum_help'
+gem 'flag-icons-rails'
+gem 'friendly_id'
+gem 'google-cloud-translate'
+gem 'groupdate'
 gem 'image_processing', '~> 1.2'
 gem 'importmap-rails'
 gem 'jbuilder'
+gem 'money'
+gem 'name_of_person'
+gem 'noticed'
 gem 'pg', '~> 1.1'
 gem 'puma', '>= 5.0'
 gem 'rails', '~> 7.1.3'
 gem 'redis', '>= 4.0.1'
+gem 'roo'
+gem 'roo-xls'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
+gem 'stripe'
 gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[windows jruby]
+gem 'wicked'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
 
 group :development, :test do
+  gem 'bullet'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'database_cleaner'
   gem 'debug', platforms: %i[mri windows]

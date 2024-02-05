@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  # Ruta raíz
+  get '/dashboard/show', to: 'dashboard#show'
   root 'dashboard#show'
 end

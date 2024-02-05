@@ -24,6 +24,7 @@ AllCops:
   TargetRailsVersion: 6.1.3.1
   Exclude:
     - 'config/initializers/*'
+    - 'config/environments/*'
     - 'db/schema.rb'
     - 'lib/tasks/auto_annotate_models.rake'
     - '**/db/migrate/*'
@@ -34,6 +35,8 @@ AllCops:
     - '**/spec_helper.rb'
     - 'node_modules/**/*'
     - 'bin/*'
+    - 'config/importmap.rb'
+    - 'config/puma.rb'
 
 ###########################################################
 ###################### Rubocop ############################

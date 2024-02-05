@@ -9,5 +9,6 @@ class CreateLanguages < ActiveRecord::Migration[7.1]
     end
 
     add_index :languages, :deleted_at
+    add_index :languages, :code, unique: true
   end
 end

@@ -9,5 +9,6 @@ class CreateRoles < ActiveRecord::Migration[7.1]
     end
 
     add_index :roles, :deleted_at
+    add_index :roles, :code, unique: true
   end
 end

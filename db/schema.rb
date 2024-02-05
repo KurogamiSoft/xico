@@ -20,6 +20,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_05_040100) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.datetime "deleted_at", precision: nil
+    t.index ["code"], name: "index_languages_on_code", unique: true
     t.index ["deleted_at"], name: "index_languages_on_deleted_at"
   end
 
@@ -29,6 +30,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_05_040100) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.datetime "deleted_at", precision: nil
+    t.index ["code"], name: "index_roles_on_code", unique: true
     t.index ["deleted_at"], name: "index_roles_on_deleted_at"
   end
 
@@ -52,6 +54,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_05_040100) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["role_id"], name: "index_users_on_role_id"
+    t.index ["username"], name: "index_users_on_username", unique: true
   end
 
 end

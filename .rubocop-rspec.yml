@@ -55,3 +55,12 @@ RSpec/VerifiedDoubles:
 
 RSpec/VoidExpect:
   Enabled: false
+
+# Custom settings for FactoryBot
+FactoryBot/AttributeDefinedStatically:
+  Exclude:
+    - 'spec/factories/**/*.rb'
+
+FactoryBot/FactoryClassName:
+  Exclude:
+    - 'spec/factories/**/*.rb'

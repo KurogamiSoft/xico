@@ -607,6 +607,7 @@ DEPENDENCIES
   roo-xls
   rspec-rails
   rubocop
+  rubocop-factory_bot
   rubocop-gitlab-security
   rubocop-performance
   rubocop-rails

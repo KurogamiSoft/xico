@@ -5,8 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable,
          :session_limitable, :timeoutable, :trackable
 
-  belongs_to :role
+  belongs_to :role, inverse_of: :users
 
   validates :username, presence: true, uniqueness: { case_sensitive: false }
-  validates :role, presence: true
 end
